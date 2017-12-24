@@ -7,3 +7,6 @@ class Sportsman():
 
     def get_tuple(self):
         return [self.surname, self.team_code, self.score, self.place]
+
+    def __getitem__(self, index):
+        return self.score
