@@ -1,2 +1,2 @@
-from log_utility import log_error
+from utility.log_utility import log_error
 log_error("Логируем тестовую ошибку")
