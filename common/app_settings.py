@@ -8,3 +8,4 @@ class AppSettings:
         data = yaml.safe_load(text)
         self.log_filename = data['logging']['filename']
         self.log_level = data['logging']['level']
+        self.file_type = data['file']['type']
