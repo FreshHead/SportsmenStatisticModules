@@ -7,6 +7,7 @@ def create(file_type):
         return PositionalFileUtility()
     return CsvFileUtility()
 
+
 class CsvFileUtility:
     def read(self, path):
         """
@@ -28,6 +29,7 @@ class CsvFileUtility:
         with open(path, 'wt') as fout:
             csvout = csv.writer(fout, delimiter='|')
             csvout.writerows(rows)
+
 
 class PositionalFileUtility:
     positional_format = [19, 24, 30]
